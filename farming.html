@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="gu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>બાલુભાઈ જાખોત્રા — મારું ફાર્મ</title>
+  <style>
+    :root{
+      --bg:#f6fcf3;
+      --card:#ffffff;
+      --accent:#2f8f4e;
+      --muted:#6b7280;
+      --glass: rgba(255,255,255,0.6);
+      font-family: Noto Sans Gujarati, Inter, system-ui, -apple-system, 'Segoe UI', Roboto;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eef7ec);color:#0b1220}
+    header{backdrop-filter: blur(6px);background:var(--glass);border-bottom:1px solid rgba(0,0,0,0.04);padding:18px 22px;position:sticky;top:0;z-index:40}
+    .container{max-width:1100px;margin:18px auto;padding:0 18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#5fb86d);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav{margin-left:auto}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:20px;align-items:center;margin-top:22px}
+    .hero-card{background:var(--card);padding:26px;border-radius:14px;box-shadow:0 6px 18px rgba(18,30,60,0.06)}
+    h1{margin:0;font-size:24px;color:#072f17}
+    p.lead{color:var(--muted);margin-top:10px}
+    .search{display:flex;margin-top:16px}
+    .search input{flex:1;padding:10px 12px;border-radius:10px;border:1px solid #e6e9ec;font-size:15px}
+    .search button{margin-left:10px;padding:10px 12px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+    @media(max-width:980px){.hero{grid-template-columns:1fr} .grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.grid{grid-template-columns:1fr}header{padding:12px}}
+
+    .vehicle{background:var(--card);border-radius:12px;padding:14px;border:1px solid rgba(12,20,34,0.04);display:flex;gap:12px;align-items:flex-start}
+    .vehicle .thumb{width:86px;height:68px;border-radius:8px;background:linear-gradient(135deg,#e6f4e9,#f3fff5);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    .vehicle h3{margin:0;font-size:16px}
+    .vehicle p{margin:6px 0 0;color:var(--muted);font-size:13px}
+    .tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:#f1f6f1;padding:6px 8px;border-radius:999px;font-size:12px;color:#2b6f39}
+
+    .details{background:linear-gradient(180deg,#ffffff, #f8fff9);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(39,80,48,0.06)}
+    .detail-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed rgba(0,0,0,0.03);font-size:14px}
+    .detail-row:last-child{border-bottom:none}
+
+    footer{margin:36px 0;text-align:center;color:var(--muted);font-size:13px;padding:26px 0}
+
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(47,143,78,0.12);color:var(--accent);font-weight:700}
+    .grid-vehicles{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <div class="logo">BHJ</div>
+        <div>
+          <div style="font-weight:800">બાલુભાઈ જાખોત્રા</div>
+          <div style="font-size:12px;color:var(--muted)">મારું ફાર્મ</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">હોમ</a>
+        <a href="#vehicles">વાહનો</a>
+        <a href="#maintenance">જાળવણી</a>
+        <a href="#safety">સુરક્ષા</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-card">
+        <h1>હેલો, હું બાલુભાઈ જાખોત્રા</h1>
+        <p class="lead">મારી પાસે આઇશર 380 મોડેલ નું ટ્રેક્ટર છે , ગાડું ટ્રેલર છે , આપણી પાસે ટોટલ બે ઓરની છે પેલી ખેડૂત કંપની ની છે . તેમાં મગફળી , સોયાબીન તથા અન્ય ચોમાસા માં પાક થાય તે વાવી શકાય છે અને બીજી ઓરની ધરતી કંપની ની છે તેમ ઘઉં, બાજરી જુવાર તેમના માટે છે. અને ખેતર ખેડવા માટે હળ છે અને જમીન ને પોચી કરવા માટે રોટાવેટર છે , જે બલવાન કંપની નું છે , મગફળી કાઢવા માટે થ્રેસર પણ છે જે ગંગા કંપની નું છે જેમાં બે જાળી નું કામ થાય છે  અને બીજા ઓજાર માં આપણી પાસે પાહિચા તથા કળિયું છે.</p>
+
+        <div class="search">
+          <input id="q" placeholder="વાહન શોધો (જેમ કે ટ્રેક્ટર, હાર્વેસ્ટર, સ્પ્રેયર)" />
+          <button onclick="doSearch()">શોધો</button>
+        </div>
+
+        <div class="grid-vehicles" id="cards"></div>
+      </div>
+
+      <aside class="details">
+        <h3>ખેડૂત વિગતો</h3>
+        <div class="detail-row"><div>નામ</div><div>બાલુભાઈ જાખોત્રા</div></div>
+        <div class="detail-row"><div>ગામ</div><div>શેઢાયા</div></div>
+        <div class="detail-row"><div>તાલુકો</div><div>કોડીનાર</div></div>
+        <div class="detail-row"><div>જિલ્લો</div><div>ગીર સોમનાથ</div></div>
+        <div class="detail-row"><div>સંપર્ક</div><div>૯૨૭૫૨૪૩૨૯૮</div></div>
+      </aside>
+    </section>
+
+    <section id="vehicles" style="margin-top:18px">
+      <h2>મારા ખેતી વાહનો અને મશીનો</h2>
+      <p style="color:var(--muted)">ઉપયોગ અને જાળવણીની માહિતી.</p>
+
+      <div class="grid" id="vehicleGrid"></div>
+    </section>
+
+    <section id="maintenance" style="margin-top:26px">
+      <h2>જાળવણી અને સેવા</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px">
+        <div class="hero-card">
+          <h4>દૈનિક</h4>
+          <ul style="color:var(--muted)">
+            <li>ઇંધણ, ઓઇલ અને કૂલન્ટ લેવલ તપાસો</li>
+            <li>ટાયર ચેક કરો</li>
+            <li>એર ઇન્ટેક સાફ કરો</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <h4>મહિનો મા</h4>
+          <ul style="color:var(--muted)">
+            <li>ગ્રીસ કરો, PTO શાફ્ટ તપાસો</li>
+            <li>ઓઇલ અને ફિલ્ટર બદલો</li>
+            <li>બેટરી ચેક કરો</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="safety" style="margin-top:26px">
+      <h2>સુરક્ષા ટીપ્સ</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+        <div class="hero-card">
+          <h4>ચાલક સુરક્ષા</h4>
+          <ul style="color:var(--muted)">
+            <li>સૌ પ્રથમ તમારી સલામતી રાખવી જરૂરી છે</li>
+            <li>ટ્રેલર પર સવારી ન કરો</li>
+            <li>લોકોને દૂર રાખો</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <h4>રસાયણ સુરક્ષા</h4>
+          <ul style="color:var(--muted)">
+            <li>સ્પ્રેયર વાપરતા PPE પહેરો</li>
+            <li>રસાયણ હવાને પ્રવેશતા સ્થળે મિક્સ કરો</li>
+            <li>વપરાશ પછી સ્પ્રેયર સાફ કરો</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    ખેડૂત: બાલુભાઈ જાખોત્રા • ગામ: શેઢાયા • developer by Prince Jakhotra © મારું ફાર્મ 2025
+  </footer>
+
+  <script>
+    const vehicles = [
+      {id:'tractor',name:'ટ્રેક્ટર',thumb:'TR',type:'ખેતર કામ',usage:'હળ ચલાવવું, ઈમ્પ્લિમેન્ટ ખેંચવું',hp:'40-250 એચપી',tips:'દૈનિક: ઓઇલ તપાસો.'},
+      {id:'gadu',name:'ગાડું',thumb:'GD',type:'પરિવહન',usage:'સામાન, પાક લઈ જવું',hp:'—',tips:'ચેસિસ અને ચક્ર તપાસો.'},
+      {id:'hali',name:'હળ',thumb:'HL',type:'ખેતર ખેડવું',usage:'માટી ઉથલાવવી',hp:'ટ્રેક્ટર જોડાણ',tips:'ધાર ચેક કરો.'},
+      {id:'rotavator',name:'રોટાવેટર',thumb:'RT',type:'માટી તૈયારી',usage:'જમીન પોચી કરવી',hp:'20-120 એચપી',tips:'બ્લેડ ચેક કરો.'},
+      {id:'thresher',name:'થ્રેસર',thumb:'TH',type:'પાક પ્રક્રિયા',usage:'મગફળી કાઢવી',hp:'ટ્રેક્ટર PTO',tips:'બેલ્ટ અને ગિયર ચેક કરો.'}
+    ];
+
+    function el(tag,attrs={},children=''){const e=document.createElement(tag);for(const k in attrs) e.setAttribute(k,attrs[k]); if(typeof children==='string') e.innerHTML=children; else if(Array.isArray(children)) children.forEach(c=>e.appendChild(c)); return e}
+
+    function renderCards(list){
+      const container=document.getElementById('cards'); container.innerHTML='';
+      list.forEach(v=>{
+        const div=el('div',{class:'vehicle'});
+        const thumb=el('div',{class:'thumb'},v.thumb);
+        const content=el('div');
+        const h3=el('h3',{},v.name);
+        const p=el('p',{},v.type);
+        const tags=el('div',{class:'tags'},'');
+        const t1=el('span',{class:'tag'},'ઉપયોગ'); const t2=el('span',{class:'tag'},v.hp);
+        tags.appendChild(t1); tags.appendChild(t2);
+        content.appendChild(h3); content.appendChild(p); content.appendChild(tags);
+        div.appendChild(thumb); div.appendChild(content);
+        div.style.cursor='pointer';
+        div.addEventListener('click',()=>showDetail(v));
+        container.appendChild(div);
+      })
+    }
+
+    function renderGrid(list){
+      const g=document.getElementById('vehicleGrid'); g.innerHTML='';
+      list.forEach(v=>{
+        const card=el('div',{class:'vehicle'});
+        const thumb=el('div',{class:'thumb'},v.thumb);
+        const body=el('div');
+        const title=el('h3',{},v.name);
+        const p=el('p',{},v.usage);
+        body.appendChild(title); body.appendChild(p);
+        card.appendChild(thumb); card.appendChild(body);
+        card.addEventListener('click',()=>showDetail(v));
+        g.appendChild(card);
+      })
+    }
+
+    function showDetail(v){
+      const aside=document.querySelector('aside.details');
+      aside.innerHTML = `
+        <h3>${v.name}</h3>
+        <p style="color:var(--muted);margin-top:6px">${v.usage}</p>
+        <div style="margin-top:12px">
+          <div class="detail-row"><div>ભૂમિકા</div><div>${v.type}</div></div>
+          <div class="detail-row"><div>શક્તિ</div><div>${v.hp}</div></div>
+          <div class="detail-row"><div>ઝડપી ટીપ</div><div>${v.tips}</div></div>
+        </div>
+      `;
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+
+    function doSearch(){
+      const q=document.getElementById('q').value.trim().toLowerCase();
+      if(!q){ renderCards(vehicles); renderGrid(vehicles); return }
+      const filtered = vehicles.filter(v=> (v.name+v.type+v.usage).toLowerCase().includes(q));
+      renderCards(filtered); renderGrid(filtered);
+      if(filtered.length===0) alert('કોઈ વાહન મળ્યું નથી. "ટ્રેક્ટર" અથવા "સ્પ્રેયર" અજમાવો');
+    }
+
+    renderCards(vehicles);
+    renderGrid(vehicles);
+  </script>
+</body>
+</html>
